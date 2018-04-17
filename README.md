@@ -1,12 +1,35 @@
 # phpunit-test-runner
 
+<!--
 Thanks for running the WordPress PHPUnit test suite on your infrastructure. We appreciate you helping to ensure WordPress’ compatibility for your users.
+-->
 
+WordPress の PHPUnit テストをみなさんのインフラで実行していただいてありがとうございます！ 私たちは、ユーザーのために WordPress との互換性を維持することを手助けしてくださることに感謝しています。
+
+<!--
 If you haven't already, [please first read through the "Getting Started" documentation](https://make.wordpress.org/hosting/test-results-getting-started/).
+-->
 
+まだ、実行していない場合は、[まずはじめにこちらのドキュメントをお読みください](https://make.wordpress.org/hosting/test-results-getting-started/)。（[日本語ドキュメンテーション](doc-ja.md)）
+
+<!--
 The test suite runner is designed to be used without any file modification. Configuration happens with a series of environment variables (see [.env.default](.env.default) for an annotated overview). Use the [repository wiki](../../wiki) to document implementation details, to avoid README conflicts with the upstream.
+-->
 
+テストランナーは、ファイルの編集等を必要とすること無く利用できるように設計されています。初期設定はいくつかの環境変数で構成されています。（[.env.default](.env.default) をご覧ください。）
+
+<!--
 At a high level, the test suite runner:
+-->
+
+詳しく説明すると:
+
+<!--
+1. Prepares the test environment for the test suite.
+2. Runs the PHPUnit tests in the test environment.
+3. Reports the PHPUnit test results to WordPress.org
+4. Cleans up the test suite environment.
+-->
 
 1. Prepares the test environment for the test suite.
 2. Runs the PHPUnit tests in the test environment.
