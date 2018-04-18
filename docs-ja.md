@@ -7,7 +7,9 @@
 ## セットアップ
 セットアップには2つの主要なステップがあります。    
 
-一つ目は、あなたのサーバ環境で[phpunit-test-runnerが実行できるように設定することです](https://github.com/wordpress/phpunit-test-runner)。詳しくは、[GithubのREADME](https://github.com/WordPress/phpunit-test-runner/blob/master/README.md)を読んでください。特に:
+一つ目は、あなたのサーバ環境で[phpunit-test-runnerが実行できるように設定することです](https://github.com/wordpress/phpunit-test-runner)。詳しくは、[GithubのREADME](https://github.com/WordPress/phpunit-test-runner/blob/master/README.md)を読んでください。    
+
+重要なポイントは:
 
 * テストはTravis CIまたは、サーバのcronジョブから実行可能です。
     * 最終的には全てのコミットに対してテストを実行させたいと思っていますが、現時点では、３〜6時間おきに実行するだけで十分です。
