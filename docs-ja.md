@@ -5,7 +5,7 @@
 テストの進め方に関して質問がある場合や、途中でテストに失敗した場合は、[プロジェクトのリポジトリでissue探してみてください。](https://github.com/wordpress/phpunit-test-runner/issues)。and we’ll help diagnose/get the documentation updated. Alternatively, また、[Wordpress.org Slack](https://make.wordpress.org/chat/)の`#hosting-community`チャネルに参加して解決の糸口を見つけることもできます。
 
 ## セットアップ
-セットアップには2つの主要なステップがあります。
+セットアップには2つの主要なステップがあります。  
 一つ目は、あなたのサーバ環境で[phpunit-test-runnerが実行できるように設定することです](https://github.com/wordpress/phpunit-test-runner)。詳しくは、[GithubのREADME](https://github.com/WordPress/phpunit-test-runner/blob/master/README.md)を読んでください。特に:
 
 * テストはTravis CIまたは、サーバのcronジョブから実行可能です。
