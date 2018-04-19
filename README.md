@@ -139,14 +139,27 @@ The [`report.php`](report.php) step:
 1. Processes PHPUnit XML log into a JSON blob.
 2. Sends the JSON to WordPress.org.
 
+<!--
 ### 4. Cleanup
+-->
+### 4. 初期化
 
+<!--
 The [`cleanup.php`](cleanup.php) step:
+-->
+[`cleanup.php`](cleanup.php) の手順:
 
+<!--
 1. Resets the database.
 2. Deletes all files delivered to the test environment.
+-->
+1. データベースをリセットする。
+2. テスト環境に送信したすべてのファイルを削除する。
 
+<!--
 ## Contributing
+-->
+## 貢献者
 
 tk
 
