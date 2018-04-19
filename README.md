@@ -150,24 +150,61 @@ SSH エイリアスを利用して、複雑なよりSSH接続を行う:
     # 2. SSH接続をする場合は、'wpt' を使用して下さい。
     ssh wpt
 
+
+<!--
 ## Running
+-->
 
+## 実行
+
+<!--
 The test suite runner is run in four steps.
+-->
 
+テストスイートは4つのステップで実行されます。
+
+<!--
 ### 0. Requirements
+-->
 
+### 0. 要件
+
+<!--
 Both the prep and test environments must meet some basic requirements.
+-->
 
+テストを準備する環境とテスト環境はどちらも基本的な要件を満たしていなければなりません。
+
+<!--
 Prep environment:
+-->
 
+準備環境:
+
+<!--
 * PHP 5.6 or greater (to run scripts).
 * Utilities: `git`, `rsync`, `wget`, `unzip`.
+-->
 
+* PHP 5.6 以上 (スクリプト実行のため).
+* ユーティリティー: `git`, `rsync`, `wget`, `unzip`.
+
+<!--
 Test environment:
+-->
 
+テスト環境:
+
+<!--
 * PHP 5.6 or greater with Phar support enabled (for PHPUnit).
 * MySQL or MariaDB with access to a writable database.
 * Writable filesystem for the entire test directory (see [#40910](https://core.trac.wordpress.org/ticket/40910) for details on why).
+-->
+
+* PHP 5.6 以上、 Phar のサポート (PHPUnitのため).
+* 書き込み可能なデータベースにアクセスできる MySQL または MariaDB。
+* テストディレクトリ全体の書き込み可能なファイルシステム (詳細については [#40910](https://core.trac.wordpress.org/ticket/40910) を参照して下さい).
+
 
 ### 1. Prepare
 
