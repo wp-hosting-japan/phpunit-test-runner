@@ -152,4 +152,7 @@ tk
 
 ## ライセンス
 
+<!--
+See LICENSE for project license.
+-->
 プロジェクトのライセンスは [LICENSE](LICENSE) (英文)を参照してください。
