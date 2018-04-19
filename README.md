@@ -10,7 +10,7 @@ WordPress の PHPUnit テストをみなさんのインフラで実行してい�
 If you haven't already, [please first read through the "Getting Started" documentation](https://make.wordpress.org/hosting/test-results-getting-started/).
 -->
 
-まだ、実行していない場合は、[まずはじめにこちらのドキュメントをお読みください](https://make.wordpress.org/hosting/test-results-getting-started/)。（[日本語ドキュメンテーション](doc-ja.md)）
+まだ、実行していない場合は、[まずはじめにこちらのドキュメントをお読みください](https://make.wordpress.org/hosting/test-results-getting-started/)。（[日本語ドキュメンテーション](https://github.com/wp-hosting-japan/phpunit-test-runner/blob/master/docs-ja.md)）
 
 <!--
 The test suite runner is designed to be used without any file modification. Configuration happens with a series of environment variables (see [.env.default](.env.default) for an annotated overview). Use the [repository wiki](../../wiki) to document implementation details, to avoid README conflicts with the upstream.
