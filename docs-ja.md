@@ -1,5 +1,15 @@
 ## ホスティングサービスでWordPressのユニットテストを実行する
 
+## このドキュメンテーションについて
+
+このドキュメンテーションは、WordPress.org に投稿された以下の記事を翻訳し一部改善したものです。
+
+https://make.wordpress.org/hosting/test-results-getting-started/
+
+もし、記載内容に誤り等があれば Issue にてご報告をお願いします。
+
+## はじめに
+
 あなたのサーバ環境でWordPressのユニットテストを実行していただけませんか？ 私たちは皆さんから[テスト結果](https://make.wordpress.org/hosting/test-results/)が届くのをとても楽しみにしています。
 
 テストの進め方に関して質問がある場合や、途中でテストに失敗した場合は、[リポジトリで issue を探してみてください](https://github.com/wordpress/phpunit-test-runner/issues)。
@@ -11,7 +21,7 @@
 ## セットアップ
 セットアップには2つの主要なステップがあります。    
 
-一つ目は、あなたのサーバ環境で [phpunit-test-runnerが実行できるように設定することです](https://github.com/wordpress/phpunit-test-runner)。詳しくは、[GithubのREADME](https://github.com/WordPress/phpunit-test-runner/blob/master/README.md)を読んでください。    
+一つ目は、あなたのサーバ環境で [phpunit-test-runnerが実行できるように設定することです](https://github.com/wordpress/phpunit-test-runner)。詳しくは、[GithubのREADME](https://github.com/wp-hosting-japan/phpunit-test-runner/blob/master/README.md)を読んでください。    
 
 重要なポイント:
 
