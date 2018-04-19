@@ -73,3 +73,11 @@ export WPT_REPORT_API_KEY='[YOUR_BOT_USER_NAME]:[YOUR_BOT_PASSWORD]'
 <img data-attachment-id="244" data-permalink="https://make.wordpress.org/hosting/test-results-getting-started/2017-08-24-at-2-25-pm/#main" data-orig-file="https://i0.wp.com/make.wordpress.org/hosting/files/2017/08/2017-08-24-at-2.25-PM.png?fit=913%2C279&amp;ssl=1" data-orig-size="913,279" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2017-08-24 at 2.25 PM" data-image-description="" data-medium-file="https://i0.wp.com/make.wordpress.org/hosting/files/2017/08/2017-08-24-at-2.25-PM.png?fit=300%2C92&amp;ssl=1" data-large-file="https://i0.wp.com/make.wordpress.org/hosting/files/2017/08/2017-08-24-at-2.25-PM.png?fit=776%2C237&amp;ssl=1" class="alignnone size-full wp-image-244" src="https://i0.wp.com/make.wordpress.org/hosting/files/2017/08/2017-08-24-at-2.25-PM.png?resize=776%2C237&amp;ssl=1" alt="" width="647" height="198" srcset="https://i0.wp.com/make.wordpress.org/hosting/files/2017/08/2017-08-24-at-2.25-PM.png?w=913&amp;ssl=1 913w, https://i0.wp.com/make.wordpress.org/hosting/files/2017/08/2017-08-24-at-2.25-PM.png?resize=300%2C92&amp;ssl=1 300w, https://i0.wp.com/make.wordpress.org/hosting/files/2017/08/2017-08-24-at-2.25-PM.png?resize=768%2C235&amp;ssl=1 768w" sizes="(max-width: 776px) 100vw, 776px">      
 
 最後の行は結果が正常にウェブサイトへアップロードされたことを示しています。
+
+## サポート
+
+私たちは、日本国内のあらゆるホスティングサービス上で WordPress が快適に動作するように、可能な限りお手伝いをしたいと思っています。
+
+もし、わからないことがあれば遠慮なく、本リポジトリで Issue を立ててください。
+
+本家のリポジトリは英語でのサポートのみとなりますが、本リポジトリは日本語でも大丈夫です。
