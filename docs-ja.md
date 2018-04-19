@@ -1,32 +1,43 @@
 ## ホスティングサービスでWordPressのユニットテストを実行する
+
 あなたのサーバ環境でWordPressのユニットテストを実行していただけませんか？ 私たちは皆さんから[テスト結果](https://make.wordpress.org/hosting/test-results/)が届くのをとても楽しみにしています。
 
 テストの進め方に関して質問がある場合や、途中でテストに失敗した場合は、[リポジトリでissue探してみてください。](https://github.com/wordpress/phpunit-test-runner/issues)。最新のドキュメントを入手することができるかもしれません。
-  また、[Wordpress.org Slack](https://make.wordpress.org/chat/)の`#hosting-community`チャネルに参加して解決の糸口を見つけることもできます。
+  また、[Wordpress.org Slack](https://make.wordpress.org/chat/)の `#hosting-community` チャネルに参加して解決の糸口を見つけることもできます。
 
 ## セットアップ
 セットアップには2つの主要なステップがあります。    
 
-一つ目は、あなたのサーバ環境で[phpunit-test-runnerが実行できるように設定することです](https://github.com/wordpress/phpunit-test-runner)。詳しくは、[GithubのREADME](https://github.com/WordPress/phpunit-test-runner/blob/master/README.md)を読んでください。    
+一つ目は、あなたのサーバ環境で [phpunit-test-runnerが実行できるように設定することです](https://github.com/wordpress/phpunit-test-runner)。詳しくは、[GithubのREADME](https://github.com/WordPress/phpunit-test-runner/blob/master/README.md)を読んでください。    
 
 重要なポイント:
 
-* テストはTravis CIまたは、サーバのcronジョブから実行可能です。
+* テストは Travis CI または、サーバの cron ジョブから実行可能です。
     * 最終的には全てのコミットに対してテストを実行させたいと思っていますが、現時点では、３〜6時間おきに実行するだけで十分です。
 * テスト用に様々な環境変数があります。
 
 すべてのテストに合格した場合、結果をWordPress.orgへ送ることができます。そのために必要なことは、
 
 1. [WordPress.orgのbotアカウントを作成します](https://login.wordpress.org/register)。  
-あなたの会社名が"Wonderful Hosting"の場合、botアカウント名はおそらく`wonderfulbot`となるでしょう。テストが失敗した際、メールを送信するので、メールアドレスを設定してください。
-2. phpunit-test-runner Githubリポジトリ上でWordPress.orgサイトにbotユーザーを"Test Reporter"として追加するようにissueを新規作成します。  
-追加するにはユーザーに紐付いたメールアドレスが必要です。  
-テスト結果表示にはカスタム投稿タイプを使用しています。
-3. botユーザーがWordPress.orgサイトに追加されると、テストランナーのアプリケーションパスワードを作成することができます。  
-WordPress.orgサイトにログインし、Users > Your Profileに移動し、アプリケーションパスワードを生成します。  
-次に、生成したアプリケーションパスワードを環境変数として設定します。  
-`export WPT_REPORT_API_KEY='wonderfulbot:Osho NHgM xYSY UWF9 qNUn YdjV'`  
-ユーザー名後のコロンの後にある文字を、botユーザーのアプリケーションパスワードに置き換えます。
+
+あなたの会社名が "Wonderful Hosting" の場合、bot アカウント名はおそらく `wonderfulbot` となるでしょう。テストが失敗した際、メールを送信するので、メールアドレスを設定してください。
+
+2. GutHub の [phpunit-test-runner](https://github.com/WordPress/phpunit-test-runner) リポジトリ上で WordPress.org サイトに bot ユーザーを "Test Reporter" として追加するように [issue](https://github.com/WordPress/phpunit-test-runner/issues) を新規作成します。  
+
+* 追加するにはユーザーに紐付いたメールアドレスが必要です。  
+* テスト結果表示にはカスタム投稿タイプを使用しています。
+
+例: https://github.com/WordPress/phpunit-test-runner/issues/57
+
+3. Bot ユーザーが WordPress.org サイトに追加されると、テストランナーのアプリケーションパスワードを作成することができます。  
+WordPress.org サイトにログインし、Users > Your Profile に移動し、アプリケーションパスワードを生成します。  
+次に、生成したアプリケーションパスワードを環境変数として設定します。
+
+```
+export WPT_REPORT_API_KEY='[YOUR_BOT_USER_NAME]:[YOUR_BOT_PASSWORD]'
+```
+
+例: `export WPT_REPORT_API_KEY='wonderfulbot:xxxxxxxxxxxx'`
 
 全てが上手くいくと、テスト結果は`php report.php`を実行後、最後に表示されます。  
 
