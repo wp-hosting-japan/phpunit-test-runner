@@ -41,19 +41,16 @@ https://make.wordpress.org/hosting/test-results-getting-started/
 
 ### 2. GitHub で bot アカウントを申請
 
-GitHub の [phpunit-test-runner](https://github.com/WordPress/phpunit-test-runner) リポジトリ上で WordPress.org サイトに bot ユーザーを "Test Reporter" として追加するように [issue](https://github.com/WordPress/phpunit-test-runner/issues) を新規作成します。  
+GitHub の [phpunit-test-runner](https://github.com/WordPress/phpunit-test-runner) リポジトリ上で WordPress.org サイトに bot ユーザーを "Test Reporter" として追加するように [issue](https://github.com/WordPress/phpunit-test-runner/issues) を新規作成します。   
 
-* 追加するにはユーザーに紐付いたメールアドレスが必要です。  
-* テスト結果表示にはカスタム投稿タイプを使用しています。
-
-例: https://github.com/WordPress/phpunit-test-runner/issues/57
-
-以下は申請用の Issue のテンプレートです。`<YOUR_EMAIL>` 及び `<YOUR_BOT_ACCOUNT>` を書き換えて Issue に投稿してください。
+以下は申請用の Issue のテンプレートです。 Bot アカウントを作成した際のメールアドレスとアカウント名で `<YOUR_EMAIL>` 及び `<YOUR_BOT_ACCOUNT>` を書き換えて Issue に投稿してください。
 
 ```
 Hi, we would like start reporting phpunit-test-runner for our services.
 The email address I've registered to wordpress.org is <YOUR_EMAIL> (<YOUR_BOT_ACCOUNT>).
 ```
+
+例: https://github.com/WordPress/phpunit-test-runner/issues/57
 
 ### 3. アプリケーションパスワードを作成
 
