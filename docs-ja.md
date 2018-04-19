@@ -41,7 +41,8 @@ GutHub の [phpunit-test-runner](https://github.com/WordPress/phpunit-test-runne
 以下は申請用の Issue のテンプレートです。`<YOUR_EMAIL>` 及び `<YOUR_BOT_ACCOUNT>` を書き換えて Issue に投稿してください。
 
 ```
-Hi, we would like start reporting phpunit-test-runner for our services. The email address I've registered to wordpress.org is <YOUR_EMAIL> (<YOUR_BOT_ACCOUNT>).
+Hi, we would like start reporting phpunit-test-runner for our services.
+The email address I've registered to wordpress.org is <YOUR_EMAIL> (<YOUR_BOT_ACCOUNT>).
 ```
 
 ### 3. アプリケーションパスワードを作成
