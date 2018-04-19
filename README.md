@@ -150,6 +150,12 @@ The [`cleanup.php`](cleanup.php) step:
 
 tk
 
+<!--
 ## License
+-->
+## ライセンス
 
+<!--
 See [LICENSE](LICENSE) for project license.
+-->
+プロジェクトのライセンスは [LICENSE](LICENSE) (英文)を参照してください。
