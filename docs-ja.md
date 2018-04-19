@@ -16,20 +16,23 @@
     * 最終的には全てのコミットに対してテストを実行させたいと思っていますが、現時点では、３〜6時間おきに実行するだけで十分です。
 * テスト用に様々な環境変数があります。
 
-すべてのテストに合格した場合、結果をWordPress.orgへ送ることができます。そのために必要なことは、
+すべてのテストに合格した場合、結果をWordPress.orgへ送ることができます。
 
-1. [WordPress.orgのbotアカウントを作成します](https://login.wordpress.org/register)。  
+そのために必要なことは以下のとおりです。
+
+### 1. [WordPress.orgのbotアカウントを作成します](https://login.wordpress.org/register)。  
 
 あなたの会社名が "Wonderful Hosting" の場合、bot アカウント名はおそらく `wonderfulbot` となるでしょう。テストが失敗した際、メールを送信するので、メールアドレスを設定してください。
 
-2. GutHub の [phpunit-test-runner](https://github.com/WordPress/phpunit-test-runner) リポジトリ上で WordPress.org サイトに bot ユーザーを "Test Reporter" として追加するように [issue](https://github.com/WordPress/phpunit-test-runner/issues) を新規作成します。  
+### 2. GutHub の [phpunit-test-runner](https://github.com/WordPress/phpunit-test-runner) リポジトリ上で WordPress.org サイトに bot ユーザーを "Test Reporter" として追加するように [issue](https://github.com/WordPress/phpunit-test-runner/issues) を新規作成します。  
 
 * 追加するにはユーザーに紐付いたメールアドレスが必要です。  
 * テスト結果表示にはカスタム投稿タイプを使用しています。
 
 例: https://github.com/WordPress/phpunit-test-runner/issues/57
 
-3. Bot ユーザーが WordPress.org サイトに追加されると、テストランナーのアプリケーションパスワードを作成することができます。  
+### 3. Bot ユーザーが WordPress.org サイトに追加されると、テストランナーのアプリケーションパスワードを作成することができます。  
+
 WordPress.org サイトにログインし、Users > Your Profile に移動し、アプリケーションパスワードを生成します。  
 次に、生成したアプリケーションパスワードを環境変数として設定します。
 
