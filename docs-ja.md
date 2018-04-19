@@ -41,7 +41,7 @@ https://make.wordpress.org/hosting/test-results-getting-started/
 
 ### 2. GitHub で bot アカウントを申請
 
-GutHub の [phpunit-test-runner](https://github.com/WordPress/phpunit-test-runner) リポジトリ上で WordPress.org サイトに bot ユーザーを "Test Reporter" として追加するように [issue](https://github.com/WordPress/phpunit-test-runner/issues) を新規作成します。  
+GitHub の [phpunit-test-runner](https://github.com/WordPress/phpunit-test-runner) リポジトリ上で WordPress.org サイトに bot ユーザーを "Test Reporter" として追加するように [issue](https://github.com/WordPress/phpunit-test-runner/issues) を新規作成します。  
 
 * 追加するにはユーザーに紐付いたメールアドレスが必要です。  
 * テスト結果表示にはカスタム投稿タイプを使用しています。
