@@ -78,6 +78,6 @@ export WPT_REPORT_API_KEY='[YOUR_BOT_USER_NAME]:[YOUR_BOT_PASSWORD]'
 
 私たちは、日本国内のあらゆるホスティングサービス上で WordPress が快適に動作するように、可能な限りお手伝いをしたいと思っています。
 
-もし、わからないことがあれば遠慮なく、本リポジトリで Issue を立ててください。
+もし、わからないことがあれば遠慮なく、本リポジトリで [Issue](https://github.com/wp-hosting-japan/phpunit-test-runner/issues) を立ててください。
 
 本家のリポジトリは英語でのサポートのみとなりますが、本リポジトリは日本語でも大丈夫です。
