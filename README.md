@@ -151,7 +151,7 @@ The [`cleanup.php`](cleanup.php) step:
 tk
 
 <!--
-## Lisence
+## License
 -->
 ## ライセンス
 
