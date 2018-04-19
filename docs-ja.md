@@ -20,18 +20,24 @@
 
 そのために必要なことは以下のとおりです。
 
-### 1. [WordPress.orgのbotアカウントを作成します](https://login.wordpress.org/register)。  
+### 1. WordPress.org で bot アカウントを作成  
+
+[WordPress.org で bot アカウントを作成してください](https://login.wordpress.org/register)。
 
 あなたの会社名が "Wonderful Hosting" の場合、bot アカウント名はおそらく `wonderfulbot` となるでしょう。テストが失敗した際、メールを送信するので、メールアドレスを設定してください。
 
-### 2. GutHub の [phpunit-test-runner](https://github.com/WordPress/phpunit-test-runner) リポジトリ上で WordPress.org サイトに bot ユーザーを "Test Reporter" として追加するように [issue](https://github.com/WordPress/phpunit-test-runner/issues) を新規作成します。  
+### 2. GitHub で bot アカウントを申請
+
+GutHub の [phpunit-test-runner](https://github.com/WordPress/phpunit-test-runner) リポジトリ上で WordPress.org サイトに bot ユーザーを "Test Reporter" として追加するように [issue](https://github.com/WordPress/phpunit-test-runner/issues) を新規作成します。  
 
 * 追加するにはユーザーに紐付いたメールアドレスが必要です。  
 * テスト結果表示にはカスタム投稿タイプを使用しています。
 
 例: https://github.com/WordPress/phpunit-test-runner/issues/57
 
-### 3. Bot ユーザーが WordPress.org サイトに追加されると、テストランナーのアプリケーションパスワードを作成することができます。  
+### 3. アプリケーションパスワードを作成
+
+Bot ユーザーが WordPress.org サイトに追加されると、テストランナーのアプリケーションパスワードを作成することができます。  
 
 WordPress.org サイトにログインし、Users > Your Profile に移動し、アプリケーションパスワードを生成します。  
 次に、生成したアプリケーションパスワードを環境変数として設定します。
@@ -45,5 +51,5 @@ export WPT_REPORT_API_KEY='[YOUR_BOT_USER_NAME]:[YOUR_BOT_PASSWORD]'
 全てが上手くいくと、テスト結果は`php report.php`を実行後、最後に表示されます。  
 
 <img data-attachment-id="244" data-permalink="https://make.wordpress.org/hosting/test-results-getting-started/2017-08-24-at-2-25-pm/#main" data-orig-file="https://i0.wp.com/make.wordpress.org/hosting/files/2017/08/2017-08-24-at-2.25-PM.png?fit=913%2C279&amp;ssl=1" data-orig-size="913,279" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2017-08-24 at 2.25 PM" data-image-description="" data-medium-file="https://i0.wp.com/make.wordpress.org/hosting/files/2017/08/2017-08-24-at-2.25-PM.png?fit=300%2C92&amp;ssl=1" data-large-file="https://i0.wp.com/make.wordpress.org/hosting/files/2017/08/2017-08-24-at-2.25-PM.png?fit=776%2C237&amp;ssl=1" class="alignnone size-full wp-image-244" src="https://i0.wp.com/make.wordpress.org/hosting/files/2017/08/2017-08-24-at-2.25-PM.png?resize=776%2C237&amp;ssl=1" alt="" width="647" height="198" srcset="https://i0.wp.com/make.wordpress.org/hosting/files/2017/08/2017-08-24-at-2.25-PM.png?w=913&amp;ssl=1 913w, https://i0.wp.com/make.wordpress.org/hosting/files/2017/08/2017-08-24-at-2.25-PM.png?resize=300%2C92&amp;ssl=1 300w, https://i0.wp.com/make.wordpress.org/hosting/files/2017/08/2017-08-24-at-2.25-PM.png?resize=768%2C235&amp;ssl=1 768w" sizes="(max-width: 776px) 100vw, 776px">      
-<br>
+
 最後の行は結果が正常にウェブサイトへアップロードされたことを示しています。
