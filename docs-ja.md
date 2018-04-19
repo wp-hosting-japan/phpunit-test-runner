@@ -2,8 +2,11 @@
 
 あなたのサーバ環境でWordPressのユニットテストを実行していただけませんか？ 私たちは皆さんから[テスト結果](https://make.wordpress.org/hosting/test-results/)が届くのをとても楽しみにしています。
 
-テストの進め方に関して質問がある場合や、途中でテストに失敗した場合は、[リポジトリでissue探してみてください。](https://github.com/wordpress/phpunit-test-runner/issues)。最新のドキュメントを入手することができるかもしれません。
-  また、[Wordpress.org Slack](https://make.wordpress.org/chat/)の `#hosting-community` チャネルに参加して解決の糸口を見つけることもできます。
+テストの進め方に関して質問がある場合や、途中でテストに失敗した場合は、[リポジトリで issue を探してみてください](https://github.com/wordpress/phpunit-test-runner/issues)。
+
+最新のドキュメントを入手することができるかもしれません。
+
+また、[Wordpress.org Slack](https://make.wordpress.org/chat/)の `#hosting-community` チャネルに参加して解決の糸口を見つけることもできます。
 
 ## セットアップ
 セットアップには2つの主要なステップがあります。    
