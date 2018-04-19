@@ -60,35 +60,79 @@ The test suite runner can be used in one of two ways:
 The test runner is configured through environment variables, documented in [`.env.default`](.env.default). It shouldn't need any code modifications; in fact, please refrain from editing the scripts entirely, as it will make it easier to stay up to date.
 -->
 
+テストランナーは[`.env.default`](.env.default)に記述されている環境変数によって、設定を変更することが出来ます。コードを変更する必要はありません。最新の状態に保つのを簡単にするために、スクリプトを編集することは控えて下さい。
 
-
+<!--
 With a direct Git clone, you can:
+-->
 
+直接 Git クローンして、次のように設定出来ます。
+
+<!--
     # Copy the default .env file.
     cp .env.default .env
     # Edit the .env file to define your variables.
     vim .env
     # Load your variables into scope.
     source .env
+-->
 
+    # デフォルトの .env ファイルをコピー.
+    cp .env.default .env
+    # .env ファイルを編集して、変数を設定。
+    vim .env
+    # 設定した変数を現在のスコープにロード。
+    source .env
+
+<!--
 In a CI service, you can set these environment variables through the service's web console. Importantly, the `WPT_SSH_CONNECT` environment variable determines whether the test suite is run locally or against a remote environment.
+-->
 
+CI サービスでは、WEB コンソールでこれらの環境変数を設定出来ます。重要： 環境変数 `WPT_SSH_CONNECT` は、テストスイートがローカルで実行されるのかリモートで実行されるのかを決定します。
+
+<!--
 Concurrently run tests in the same environment by appending build ids to the test directory and table prefix:
+-->
+
+ビルドIDとテーブル接頭辞を追加すると、同じ環境でテストを実行:
+
+<!--
+    export WPT_TEST_DIR=wp-test-runner-$TRAVIS_BUILD_NUMBER
+    export WPT_TABLE_PREFIX=wptests_$TRAVIS_BUILD_NUMBER\_
+-->
 
     export WPT_TEST_DIR=wp-test-runner-$TRAVIS_BUILD_NUMBER
     export WPT_TABLE_PREFIX=wptests_$TRAVIS_BUILD_NUMBER\_
 
+<!--
 Connect to a remote environment over SSH by having the CI job provision the SSH key:
+-->
 
+CIジョブでSSH鍵を用意して、SSH経由でリモート環境に接続:
+
+<!--
     # 1. Create a SSH key pair for the controller to use
     ssh-keygen -t rsa -b 4096 -C "travis@travis-ci.org"
     # 2. base64 encode the private key for use with the environment variable
     cat ~/.ssh/id_rsa | base64 --wrap=0
     # 3. Append id_rsa.pub to authorized_keys so the CI service can SSH in
     cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+-->
 
+    # 1. CIサービスが使うための、SSHキーペアを作成
+    ssh-keygen -t rsa -b 4096 -C "travis@travis-ci.org"
+    # 2. 秘密鍵を環境変数として使うために、base64でエンコード。
+    cat ~/.ssh/id_rsa | base64 --wrap=0
+    # 3. CI サービスが SSH で接続できるように、id_rsa.pub を authorized_keys に追加
+    cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+
+<!--
 Use a more complex SSH connection process by creating a SSH alias:
+-->
 
+SSH エイリアスを利用して、複雑なよりSSH接続を行う:
+
+<!--
     # 1. Add the following to ~/.ssh/config to create a 'wpt' alias
     Host wpt
       Hostname 123.45.67.89
@@ -96,7 +140,15 @@ Use a more complex SSH connection process by creating a SSH alias:
       Port 1234
     # 2. Use 'wpt' wherever you might normally use a SSH connection string
     ssh wpt
+-->
 
+    # 1.  ~/.ssh/config に以下を追加して、'wpt' エイリアスを 作成
+    Host wpt
+      Hostname 123.45.67.89
+      User wpt
+      Port 1234
+    # 2. SSH接続をする場合は、'wpt' を使用して下さい。
+    ssh wpt
 ## Running
 
 The test suite runner is run in four steps.
