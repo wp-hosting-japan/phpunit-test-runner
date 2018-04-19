@@ -132,12 +132,22 @@ The [`test.php`](test.php) step:
 
 1. Calls `php phpunit.phar` to produce `tests/phpunit/build/logs/junit.xml`.
 
+<!--
 ### 3. Report
+-->
+### 3. 報告
 
+<!--
 The [`report.php`](report.php) step:
+-->
+[`report.php`](report.php) の手順:
 
+<!--
 1. Processes PHPUnit XML log into a JSON blob.
 2. Sends the JSON to WordPress.org.
+-->
+1. PHPUnit の XML を処理して、JSON の blob にする。
+2. JSON を WordPress.org に送信する。
 
 ### 4. Cleanup
 
