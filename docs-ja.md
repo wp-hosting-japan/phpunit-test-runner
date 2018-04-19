@@ -15,9 +15,9 @@
     * 最終的には全てのコミットに対してテストを実行させたいと思っていますが、現時点では、３〜6時間おきに実行するだけで十分です。
 * テスト用に様々な環境変数があります。
 
-次に、全てのテストに合格した場合、結果をWordPress.orgへ送ることができます。そのために必要なことは、
+すべてのテストに合格した場合、結果をWordPress.orgへ送ることができます。そのために必要なことは、
 
-1. WordPress.orgのbotアカウントを作成します。  
+1. [WordPress.orgのbotアカウントを作成します](https://login.wordpress.org/register)。  
 あなたの会社名が"Wonderful Hosting"の場合、botアカウント名はおそらく`wonderfulbot`となるでしょう。テストが失敗した際、メールを送信するので、メールアドレスを設定してください。
 2. phpunit-test-runner Githubリポジトリ上でWordPress.orgサイトにbotユーザーを"Test Reporter"として追加するようにissueを新規作成します。  
 追加するにはユーザーに紐付いたメールアドレスが必要です。  
