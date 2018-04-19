@@ -31,17 +31,30 @@ At a high level, the test suite runner:
 4. Cleans up the test suite environment.
 -->
 
-1. Prepares the test environment for the test suite.
-2. Runs the PHPUnit tests in the test environment.
-3. Reports the PHPUnit test results to WordPress.org
-4. Cleans up the test suite environment.
+1. テストスイート用の環境を準備する。
+2. テスト環境で PHPUnit を実行する。
+3. WordPress.org にテスト結果を報告する。
+4. テスト環境を初期化する。
 
+<!--
 ## Configuring
+-->
 
+## 設定
+
+<!--
 The test suite runner can be used in one of two ways:
+-->
 
+テストスイート用ランナーは以下の2つの方法のうちのいずれかで実行することができます。
+
+<!--
 1. With Travis (or Circle or some other CI service) as the controller that connects to the remote test environment.
 2. With the runner cloned to and run directly within the test environment.
+-->
+
+1. Travis CI （または Circle CI などの CI サービス）をコントローラーとして利用して、リモートサーバー上のテストを実行する。
+2. テストランナーをテスト環境内にクローンして直接実行する。
 
 The test runner is configured through environment variables, documented in [`.env.default`](.env.default). It shouldn't need any code modifications; in fact, please refrain from editing the scripts entirely, as it will make it easier to stay up to date.
 
