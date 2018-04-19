@@ -21,7 +21,7 @@ https://make.wordpress.org/hosting/test-results-getting-started/
 ## セットアップ
 セットアップには2つの主要なステップがあります。    
 
-一つ目は、あなたのサーバ環境で [phpunit-test-runnerが実行できるように設定することです](https://github.com/wordpress/phpunit-test-runner)。詳しくは、[GithubのREADME](https://github.com/wp-hosting-japan/phpunit-test-runner/blob/master/README.md)を読んでください。    
+一つ目は、あなたのサーバ環境で [phpunit-test-runnerが実行できるように設定することです](https://github.com/wordpress/phpunit-test-runner)。詳しくは、[GithubのREADME](https://github.com/wp-hosting-japan/phpunit-test-runner/blob/master/README.md)(日本語)を読んでください。    
 
 重要なポイント:
 
